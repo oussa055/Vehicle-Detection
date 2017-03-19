@@ -22,7 +22,7 @@ All the code implementation is present in the notebook **vehicle_detection.ipynb
 ## Data Analysis:
 These images have to be extracted from real world videos and images, and correctly labeled. Udacity provided 8.792 images of car and 8.968 images of non-cars, from sources listed in the attachments. The images have 64 x 64 pixels.
 
-![Data](output_images/data.jpeg?raw=true \"Data")"
+![Data](output_images/data.jpeg)
 
 ## The Feature extractor:
 
@@ -49,7 +49,7 @@ The following are the parameters chosen for HOG, Spatial Bins and Color Histogra
   g) Spatial Image Size - (32, 32)
  
 A sample hog feature can be shown in the figure below:
-![Data](output_images/hog.png?raw=true \"Data")"
+![Data](output_images/hog.png)
 
 These parameters are present in cell no. 6 of vehicle_detection.ipynb. The function extract_features() combines all these features together to form our required feature. The feature extraction takes place in cell no 6. These features are normalised using the function StandardScaler()
 
@@ -63,21 +63,21 @@ I have trained my classifier using LinearSVC with 10000 samples in each of car a
 ## Applying the classifier in an image frame
 The car can appear in different sizes so different window sizes are required to detect the car. I have used scales of 1.3, 1.5, 1.8 which corresponds to window of 83, 96 and 115 respectively as defined find_cars() function in the cell no 14.
 
-![Fool](output_images/windows.jpg?raw=true \"Fool")
+![Fool](output_images/windows.jpg)
 Heatmaps are used to find the actual car in the image as shown below. The code for heatmaps are present in the cell no 13.
-![Data](output_images/heat.jpg?raw=true \"Heatmap")
+![Data](output_images/heat.jpg)
 
 ## Smoothing
 One problem of the method described so far is that it detects a lot of false positives: images that are not cars but fool the SVC as they are cars. The image below is an example of it.
 
 To avoid false positives, we do an average over 10 frames of images. A real car is probable to keep appearing in the image. A false positive will disappear.
-![Data](output_images/result.jpg?raw=true \"Data")
+![Data](output_images/result.jpg)
 
 ## Result
 
 The implementation of the above pipeline on the project video is below:
 
-[![Track 2 - Test arena](output_images/you.png)](https://www.youtube.com/watch?v=444CKPWkpRE \"Project Video\")
+![Track 2 - Test arena](output_images/you.png)](https://www.youtube.com/watch?v=444CKPWkpRE \"Project Video\")
 
 ## Discussion
 
