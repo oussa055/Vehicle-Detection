@@ -78,7 +78,7 @@ To avoid false positives, we do an average over 10 frames of images. A real car 
 
 The implementation of the above pipeline on the project video is below:
 
-![Track 2 - Test arena](output_images/you.png) (https://www.youtube.com/watch?v=444CKPWkpRE \"Project Video\")
+[![Vehicle Detection](output_images/you.png)](https://www.youtube.com/watch?v=444CKPWkpRE "Project Video diagnosis")
 
 ## Discussion
 
