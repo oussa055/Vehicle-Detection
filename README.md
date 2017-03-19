@@ -71,6 +71,7 @@ Heatmaps are used to find the actual car in the image as shown below. The code f
 One problem of the method described so far is that it detects a lot of false positives: images that are not cars but fool the SVC as they are cars. The image below is an example of it.
 
 To avoid false positives, we do an average over 10 frames of images. A real car is probable to keep appearing in the image. A false positive will disappear.
+
 ![Data](output_images/result.jpg)
 
 ## Result
