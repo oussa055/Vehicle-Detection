@@ -88,7 +88,7 @@ In the video there is a scenario (at time 41 sec) in which the false positives a
 
 The implementation of the above pipeline on the project video is below:
 
-[![Track 2 - Test arena](output_images/you.png)](https://www.youtube.com/watch?v=444CKPWkpRE \"Project Video\")
+[![Project Video](output_images/you.png)](https://www.youtube.com/watch?v=444CKPWkpRE \"Project Video\")
 
 ## Discussion
 
