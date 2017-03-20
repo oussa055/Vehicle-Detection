@@ -79,7 +79,7 @@ To avoid false positives, we do an average over 10 frames of images. A real car 
 
 Another trick that helped in getting a good result was to award +1 to the heatmap for the location of positive window. If its an false positive still it gets +1, but over the course of next frames where the false positive is unlikely to return (considering a robust classifier in place) doing this +1 award to detected windows does not significantly hamper the pipeline. 
 
-**Exceptions seen during testing: **
+**Exceptions seen during testing:**
 In the video there is a scenario (at time 41 sec) in which the false positives are observed. This I think is due to multiple false positives over frames which gets above the threshold.
 
 ![Data](output_images/result.jpg?raw=true \"Data")
